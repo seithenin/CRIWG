@@ -1,0 +1,79 @@
+body {
+	text-align:center;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+#bg {
+	background:url(images/bg.jpg);
+	margin:0 auto;
+	width:939px;
+	height:1100px;
+}
+
+#wrap {
+	width:789px;
+	text-align:left;
+	margin:0 auto;
+	position: relative;
+	top:90px;
+	
+}
+
+#logo {
+	position: absolute;
+	top:10px;
+	color:#fff;
+	padding-left:90px
+}
+#logo h1 {
+    text-align:left;
+	font-size:34px;
+}
+#logo div {
+	padding-left:120px;
+    text-align:left;
+	color:#85c471;
+}
+#logo img {
+    margin-right:20px;
+    float: left;
+}
+
+#nav {background:url(images/nav.jpg) repeat-x; height:31px; }
+#nav li{display: inline; border-right:#FFFFFF 1px solid; padding:0 17px; line-height:30px}
+#nav li a{color:#FFFFFF}
+.float-l{ float:left}
+.float-r{ float:right}
+.clearfix{ clear:both}
+
+
+
+/* header */
+#header { background:url(images/saskatoon-header.jpg); height:122px }
+
+/* content */
+#content {height: 780px;}
+.left {background:url(images/side.jpg) no-repeat; height:764px}
+.left ul { width:200px; margin:0 0 0 40px}
+.left ul li {border-bottom: #1e3a07 1px solid; line-height:20px; width:180px}
+.left li a {color:#1e3a07}
+.right {width:520px}
+.right p{width:500px; margin-bottom:10px}
+.right img {padding:10px; padding-right:20px}
+.right h2 {font-size:34px; padding:20px 0}
+.right h3 {font-size:20px; padding:5px 5px 0px 5px; border-bottom: #000000 1px solid; border-left: #000000 5px solid; width:495px}
+.right span {color:#0D2C55;	font-weight:bold;}
+
+.right ul { padding-left: 2em;}
+.right ul li {list-style-type:disc;}
+
+/* footer */
+#footer { clear:both; color:#fff}
+#footer a{color:#fff}
+
+#xhtml{float:right}
