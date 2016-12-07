@@ -75,6 +75,11 @@ h2.title {
 	margin-top: 1em;
 }
 
+.logo-spacing img{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
 .panel-body-adjustment {
 	padding-top: 15px;
 	padding-bottom: 15px;

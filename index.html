@@ -80,11 +80,12 @@
 
             </div><!-- col-sm-9 -->
 
-            <!-- ======== SPONSORS COLUMN ========== -->
+            <!-- ======== SPONSORS/CFP/WORKSHOPS COLUMN ========== -->
             <div class="col-sm-3 col-sm-pull-9 sidebar">
 
               <h3>Sponsors</h3>
-              <p class="no-newline">Sponsored by:</p>
+              <!-- ====== insert sponsors here ===== -->
+              <!-- <p class="no-newline">Sponsored by:</p>
               <p class="indent">
                 <a href="http://www.ipsj.or.jp/sig/gw/index-e.html" target="blank">IPSJ SIG-GN</a>
               </p>
@@ -104,41 +105,35 @@
                 Ishikawa Prefecture<br>
                 Kanazawa City<br>
                 Hitachi, Ltd.
-              </p>
+              </p> -->
 
             <h3>CRIWG 2016 CFP</h3>
             <a href="CRIWG2016-flyer.pdf" target="blank">CRIWG2016-flyer.pdf</a>
 
             <h3>Workshop</h3>
 
-            <a href="CFP-TECL2016(2).pdf" target="blank">The International Workshop on Technology-Enhanced Collaborative Learning (PDF)</a>
+            <!-- <a href="CFP-TECL2016(2).pdf" target="blank">The International Workshop on Technology-Enhanced Collaborative Learning (PDF)</a>
             <p>&nbsp;</p>
-            <a href="CFP-LAEDM(1).pdf" target="blank">The International Workshop on Learning Analytics and Educational Data Mining (LAEDM 2016)(PDF)</a>
-          </div><!-- col-sm-3 -->
+            <a href="CFP-LAEDM(1).pdf" target="blank">The International Workshop on Learning Analytics and Educational Data Mining (LAEDM 2016)(PDF)</a> -->
 
-        </div><!-- row -->
+          </div><!-- end of Sponsors/cfp/workshops column -->
+
+        </div><!-- end of div="row" -->
+
+        <!-- ======== Sponsor images footer ========== -->
         <div class="row">
           <div class="col-sm-12 center-text separator">
-            <a href="http://www.ipsj.or.jp/english/index.html" target="_blank">
-              <img src="images/sponsors/IPSJ_logoC_M.gif" width="148" height="34" /></a>
-            <a href="http://www.ipsj.or.jp/sig/gw/index-e.html" target="_blank">
-              <img src="images/sponsors/GN_320x180.png" width="80" height="45" /></a>
-            <a href="http://www.his.gr.jp/sig/sigce.html" target="_blank">
-              <img src="images/sponsors/CE02.jpg" width="74" height="37" /></a>
-            <a href="http://www.vrsj.org/" target="_blank">
-              <img src="images/sponsors/VRSJ-logo.png" width="85" height="50" /></a>
-            <a href="http://www.jaist.ac.jp/" target="_blank">
-              <img src="images/sponsors/unspecified.jpg" width="80" height="42" /></a>
-            <a href="http://www.slis.tsukuba.ac.jp/" target="_blank">
-              <img src="images/sponsors/tsukuba-logo.png" width="70" height="80" /></a>
+            <div class="logo-spacing">
+            <!-- ==== insert images here ==== -->
             <a href="http://www.criwg.org/" target="_blank">
               <img src="images/sponsors/criwg_organisation1.png" width="185" height="69" /></a>
             <a href="http://www.springer.com/computer/lncs?SGWID=0-164-0-0-0" target="_blank">
               <img src="images/sponsors/lncs.png" width="185" height="68" /></a>
-            <a href="http://www.hitachi.com/corporate/about/identity/inspire/index.html" target="_blank">
-              <img src="images/sponsors/ea60_010_030_dwin.jpg" width="146" height="48"></a>
+            <a href="http://www.usask.ca/" target="_blank">
+              <img src="images/sponsors/usask.png" /></a>
+              </div>
             </div><!-- col-sm-12 -->
-          </div><!-- row2 -->
+          </div><!-- end of row2 -->
 
         </div><!-- content-frame -->
       </div><!-- panel-body -->
@@ -151,8 +146,11 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script>
+
+    /* by default insert the page from index-content.html */
     $("#content-page").load("index-content.html");
 
+    /* handle click events on the menu */
     $("#main-menu li a").click(function(event){
 
       /* Do not navigate to page using a href */      
@@ -176,10 +174,7 @@
       $(this).parent().addClass("active");
     });
 
-
   </script>
-
-
 
 </body>
 </html>
