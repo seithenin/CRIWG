@@ -5,6 +5,7 @@
 }
 }*/
 
+
 h2.title {
 	 border-bottom-width: 1px;
 	 border-bottom-style: solid;
@@ -55,6 +56,10 @@ h2.title {
 	.saskatoon-header {
 		background-image: url("../images/city/solid_header.png");
 		background-repeat: no-repeat;
+	}
+
+	.top-padding {
+		padding-top: 10px;
 	}
 }
 
