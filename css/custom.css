@@ -1,113 +1,4 @@
-
-/*@media (min-width: 768px) {
-.navbar-collapse {
-	border-top: default;
-}
-}*/
-
-
-h2.title {
-	 border-bottom-width: 1px;
-	 border-bottom-style: solid;
-	 border-bottom-color: black;
-	 margin: 0;
-	 padding: 0.5em 0 0.5em 0;
-}
-
-.sidebar h3 {
-	font-size: 1.5em;
-	border-bottom: 1px solid black;
-	margin-bottom: 4px;
-}
-
-.standout {
-	border: 3px solid black;
-	background-color: #9acce8;
-}
-
-.content-frame {
-	background-color: #fff;
-	border-bottom-left-radius: 4px;
-	border-bottom-right-radius: 4px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
-	box-shadow: 0 1px 1px rgba(0,0,0,.05);
-}
-
-.content-frame-border {
-	border-color: #ddd;
-}
-
-/* small screens hide the summary */
-.summary {
-	display: none;
-}
-
-@media (min-width: 768px) {
-	.summary {
-		height: 50px; /* height of navbar-brand */
-		display: table-cell;
-		text-align: left;
-		font-size: 1em;
-		vertical-align: bottom;
-		font-weight: bold;
-		color: white;
-
-	}
-	.saskatoon-header {
-		background-image: url("../images/city/solid_header.png");
-		background-repeat: no-repeat;
-	}
-
-	.top-padding {
-		padding-top: 10px;
-	}
-}
-
-.center-text {
-	text-align: center;
-}
-
-.separator {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: black;
-	padding: 0.5em 0em 0.5em 0em;
-	margin-top: 1em;
-}
-
-.logo-spacing img{
-	margin-left: 4px;
-	margin-right: 4px;
-}
-
-.panel-body-adjustment {
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-left: 50px;
-	padding-right: 50px;
-}
-
-p.no-newline {
-	margin-bottom: 0px;
-}
-
-p.indent {
-	padding-left: 1em;
-}
-
-
-.navbar-brand.usask-brand {
-	font-weight: bold;
-	color: white;
-	font-size: 2.5em;
-}
-
-/* Override the tabs formatting */
-.nav-tabs {
-	margin-top: 0px;
-	border-bottom: none;
-}
-
+/* === Colors according to the usask marketting guide === */
 .dark-green-bg {
 	background-color: #417630;
 }
@@ -152,46 +43,114 @@ p.indent {
 	background-color: #F8F8F8;
 }
 
-
-/* Manually adjust the width where the
- *  hamburger menu appears - currently at 850 */
-/*@media (max-width: 850px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-text {
-        float: none;
-        margin: 15px 0;
-    }
-    .navbar-collapse.collapse.in { 
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
+/* === Custom css styles === */
+h2.title {
+	 border-bottom-width: 1px;
+	 border-bottom-style: solid;
+	 border-bottom-color: black;
+	 margin: 0;
+	 padding: 0.5em 0 0.5em 0;
 }
-*/
+
+.sidebar h3 {
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+	margin-bottom: 4px;
+}
+
+.content-frame {
+	background-color: #fff;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.content-frame-border {
+	border-color: #ddd;
+}
+
+/* on small screens hide the summary */
+.summary {
+	display: none;
+}
+
+.panel-body-adjustment {
+	padding: 0px;
+}
+
+@media (min-width: 768px) {
+
+	.summary {
+		height: 50px; /* height of navbar-brand */
+		display: table-cell;
+		text-align: left;
+		font-size: 1em;
+		vertical-align: bottom;
+		font-weight: bold;
+		color: white;
+	}
+
+	.saskatoon-header {
+		background-image: url("../images/city/solid_header.png");
+		background-repeat: no-repeat;
+	}
+
+	.top-padding {
+		padding-top: 10px;
+	}
+
+	.panel-body-adjustment {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+}
+
+.center-text {
+	text-align: center;
+}
+
+.separator {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: black;
+	padding: 0.5em 0em 0.5em 0em;
+	margin-top: 1em;
+}
+
+.logo-spacing img{
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+p.no-newline {
+	margin-bottom: 0px;
+}
+
+p.indent {
+	padding-left: 1em;
+}
+
+.table-padding td{
+	padding-left: 1em;
+}
+
+.table-heading {
+	background-color: #417630;
+	color: white;
+}
+
+.table-heading th{
+	padding-left: 5px;
+}
+
+.navbar-brand.usask-brand {
+	font-weight: bold;
+	color: white;
+	font-size: 2.5em;
+}
 
 /* =========================================
  * =                                       =
@@ -213,6 +172,7 @@ p.indent {
 	margin: 0px;
 }
 
+/* ==== Small Screen overrides ==== */
 .navbar {
 	margin-bottom: 0px;
 	border: none;
@@ -225,34 +185,57 @@ p.indent {
 	margin-left: -15px;
 }
 
-/* ==== Small Screens ==== */
-.navbar-default .navbar-nav li a, .navbar-default .navbar-nav li a:hover {
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:hover,
+.navbar-default .navbar-nav li a:focus {
 		border: 2px solid #E4E597;
 		border-bottom: none;
 		background-color: #417630;
 		color: white;
+		outline: 0;
 }
 
-.navbar-default .navbar-nav li:last-child a, .navbar-default .navbar-nav li:last-child a:hover {
+/* Last element in small screen should have
+	the same border as above */
+.navbar-default .navbar-nav li:last-child a, 
+.navbar-default .navbar-nav li:last-child a:hover,
+.navbar-default .navbar-nav li:last-child a:focus {
 	border-bottom: 2px solid #E4E597;
 }
-
+/*
 .navbar-default .navbar-nav li a:hover{
 	background-color: #E4E597;
 	color: #417630;
-}
+}*/
 
-.navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.active a:hover {
+.navbar-default .navbar-nav li.active a, 
+.navbar-default .navbar-nav li.active a:hover,
+.navbar-default .navbar-nav li.active a:focus {
 	background-color: white;
+	outline: 0; /* remove blue focus border in Chrome */
 }
 
-	.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
-		color: white;
-  		display: block;
-  		font-size: 3em;
-	}
+.navbar-default .navbar-brand, 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	color: white;
+	display: block;
+	font-size: 1.5em;
+	outline: 0;
+}
 
-/* ==== Large Screens ==== */
+@media (min-width: 365px) {
+	.navbar-default .navbar-brand, 
+	.navbar-default .navbar-brand:hover,
+	.navbar-default .navbar-brand:focus {
+		color: white;
+		display: block;
+		font-size: 3em;
+		outline: 0;
+	}
+}
+
+/* ==== Large Screen overrides ==== */
 @media (min-width: 768px) {
 
 	.navbar {
@@ -262,32 +245,16 @@ p.indent {
 		border-bottom-right-radius: 0px;
 	}
 
-
-
 	.navbar-default .navbar-collapse {
 		clear: both;
-		/*text-align: center;*/
 	}
 
-	/*.navbar-default .navbar-nav .active a {
-		background-color: white;
-	}
-*/
-	.navbar-nav li {
-/*		border-top-color: white;
-		border-top-style: solid;
-		border-top-width: 4px;
-		border-right-color: white;
-		border-right-style: solid;
-		border-right-width: 4px;
-		border-left-color: white;
-		border-left-style: solid;
-		border-left-width: 4px;
-		border-top-right-radius: 4px;
-		border-top-left-radius: 4px;*/
-	}
-
-	.navbar-default .navbar-nav li a, .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li:last-child a, .navbar-default .navbar-nav li:last-child a:hover {
+	.navbar-default .navbar-nav li a, 
+	.navbar-default .navbar-nav li a:hover,
+	.navbar-default .navbar-nav li a:focus, 
+	.navbar-default .navbar-nav li:last-child a, 
+	.navbar-default .navbar-nav li:last-child a:hover,
+	.navbar-default .navbar-nav li:last-child a:focus {
 		padding-top: 6px;
 		padding-bottom: 6px;
 		padding-right: 15px;
@@ -302,23 +269,28 @@ p.indent {
 
 		background-color: #417630;
 		color: white;
+
+		outline: 0; /* no border on focus in Chrome */
 	}
 
-	.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li:last-child a:hover{
+	.navbar-default .navbar-nav li a:hover, 
+	.navbar-default .navbar-nav li:last-child a:hover{
 		background-color: #E4E597;
 		color: #417630;
 	}
 
-	.navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.active a:hover {
+	.navbar-default .navbar-nav li.active a, 
+	.navbar-default .navbar-nav li.active a:hover,
+	.navbar-default .navbar-nav li.active a:focus {
 		background-color: white;
 		border: 2px solid white;
 		border-bottom-width: 0px;
 		z-index: 5;
 		margin-left: 1px;
 		margin-right: 1px;
-	}
 
-	
+		outline: 0; /* no border on focus in Chrome */
+	}
 
 	.navbar ul {
 		float: none;
@@ -330,17 +302,6 @@ p.indent {
 		text-align: center;
 	}
 
-
-/*	.nav .navbar-nav li {
-		float: none;
-		display: inline-block;
-		vertical-align: bottom;
-	}
-
-	.nav .navbar-nav {
-		text-align: center;
-	}
-*/
 	.container {
 		width: 940px;
 	}

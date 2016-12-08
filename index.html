@@ -21,11 +21,8 @@
 <body class="light-grey-bg">
 
   <div class="container top-padding">
-
     <div class="panel panel-primary">
       <div class="panel-body dark-green-bg panel-body-adjustment">
-
-
 
         <nav class="navbar navbar-default saskatoon-header light-green-bg ">
           <div class="container-fluid">
@@ -46,13 +43,18 @@
             <div id="navbar" class="navbar-collapse collapse">
 
               <ul class="nav navbar-nav navbar-margin" id="main-menu">
-                <li role="presentation" class="active"><a href="index-content.html">Home</a></li>
-                <li role="presentation"><a href="venue-content.html">Venue</a></li>
-                <li role="presentation"><a href="submission-content.html">Submission</a></li>
-                <li role="presentation"><a href="program-content.html">Program</a></li>
-                <li role="presentation"><a href="keynote-content.html">Keynote</a></li>
-                <li role="presentation"><a href="registration-content.html">Registration</a></li>
-                <li role="presentation"><a href="committee-content.html">Committee</a></li>
+              <!--  =================== ACTIVATE LINKS #1 ===========================
+                    =   change data-is-active-link to true to make the link active, =
+                    =   this is the first place that must be changed                =
+                    =================================================================
+                    -->
+                <li role="presentation" class="active"><a data-is-active-link="true" href="index-content.html">Home</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="venue-content.html">Venue</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="submission-content.html">Submission</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="program-content.html">Program</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="keynote-content.html">Keynote</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="registration-content.html">Registration</a></li>
+                <li role="presentation"><a data-is-active-link="false" href="committee-content.html">Committee</a></li>
               </ul>
 
             </div><!--/.nav-collapse -->
@@ -62,22 +64,25 @@
           <div class="row">
             <!-- ======== MAIN CONTENT COLUMN ========== -->
             <div class="col-sm-9 col-sm-push-3" id="content-page">
-                <!-- loading dynamic content relies of javascript, if not available provide the link to the content -->
+                <!-- loading dynamic content relies on javascript, this section will load if no javascript is available -->
               <noscript>
               <i>This site uses javascript to deliver content and may not function properly without it.</i>
               <br />
               <br />
               If javascript is disabled refer to the links below to navigate through the site:<br />
                 <a href="index-content.html">index-content</a><br />
+                <!--  =================== ACTIVATE STATIC LINKS #2 =================
+                      =   uncomment theses links to make them active,              =
+                      =   this is the second place that must be changed            =
+                      ==============================================================
+
                 <a href="venue-content.html">venue-content</a><br />
                 <a href="submission-content.html">submission-content</a><br />
                 <a href="program-content.html">program-content</a><br />
                 <a href="keynote-content.html">keynote-content</a><br />
                 <a href="registration-content.html">registration-content</a><br />
-                <a href="committee-content.html">commmittee-content</a><br />
+                <a href="committee-content.html">commmittee-content</a><br /> -->
                 </noscript>
-
-
             </div><!-- col-sm-9 -->
 
             <!-- ======== SPONSORS/CFP/WORKSHOPS COLUMN ========== -->
@@ -108,7 +113,7 @@
               </p> -->
 
             <h3>CRIWG 2016 CFP</h3>
-            <a href="CRIWG2016-flyer.pdf" target="blank">CRIWG2016-flyer.pdf</a>
+            <a href="downloads/CRIWG2016-flyer.pdf" target="blank">CRIWG2016-flyer.pdf</a>
 
             <h3>Workshop</h3>
 
@@ -147,6 +152,11 @@
 
   <script>
 
+    /* Clear the cache for dynamic loading content */
+    $.ajaxSetup ({
+      cache: false
+    });
+
     /* by default insert the page from index-content.html */
     $("#content-page").load("index-content.html");
 
@@ -156,22 +166,32 @@
       /* Do not navigate to page using a href */      
       event.preventDefault();
 
-      /* select the hrefs to get the page name */
-      var pageContent = $(this).attr("href");
+      if($(this).attr("data-is-active-link")=='true'){
 
-      /* load the pages from X-content.html */
-      $("#content-page").load(pageContent);
+        /* select the hrefs to get the page name */
+        var pageContent = $(this).attr("href");
 
-      /* get all the menu li's to remove any "active" class */
-      var menuList = $(this).parent($("li")).parent($("ul")).find($("li"));
+        /* load the pages from X-content.html */
+        $("#content-page").load(pageContent);
 
-      /* remove the "active" classes from menu */
-      menuList.each(function(){
-        $(this).removeClass("active");
-      });
+        /* get all the menu li's to remove any "active" class */
+        var menuList = $(this).parent($("li")).parent($("ul")).find($("li"));
 
-      /* Indicate which menu item is currently active */
-      $(this).parent().addClass("active");
+        /* remove the "active" classes from menu */
+        menuList.each(function(){
+          $(this).removeClass("active");
+        });
+
+        /* remove the empty class from html (just cleanup) */
+        $('*[class=""]').removeAttr('class');
+
+        /* Indicate which menu item is currently active */
+        $(this).parent().addClass("active");
+      }
+     
+      /* Hide the menu when clicked on small screens */
+      if($(window).width() <= 768)
+        $('.navbar-toggle').click();
     });
 
   </script>
