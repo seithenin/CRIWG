@@ -74,14 +74,14 @@
                 <!--  =================== ACTIVATE STATIC LINKS #2 =================
                       =   uncomment theses links to make them active,              =
                       =   this is the second place that must be changed            =
-                      ==============================================================
+                      ============================================================== -->
 
                 <a href="venue-content.html">venue-content</a><br />
                 <a href="submission-content.html">submission-content</a><br />
                 <a href="program-content.html">program-content</a><br />
                 <a href="keynote-content.html">keynote-content</a><br />
                 <a href="registration-content.html">registration-content</a><br />
-                <a href="committee-content.html">commmittee-content</a><br /> -->
+                <a href="committee-content.html">commmittee-content</a><br />
                 </noscript>
             </div><!-- col-sm-9 -->
 
@@ -90,7 +90,7 @@
 
               <h3>Sponsors</h3>
               <!-- ====== insert sponsors here ===== -->
-              <!-- <p class="no-newline">Sponsored by:</p>
+              <p class="no-newline">Sponsored by:</p>
               <p class="indent">
                 <a href="http://www.ipsj.or.jp/sig/gw/index-e.html" target="blank">IPSJ SIG-GN</a>
               </p>
@@ -110,7 +110,7 @@
                 Ishikawa Prefecture<br>
                 Kanazawa City<br>
                 Hitachi, Ltd.
-              </p> -->
+              </p>
 
             <h3>CRIWG 2016 CFP</h3>
             <a href="downloads/CRIWG2016-flyer.pdf" target="blank">CRIWG2016-flyer.pdf</a>
@@ -166,7 +166,7 @@
       /* Do not navigate to page using a href */      
       event.preventDefault();
 
-      if($(this).attr("data-is-active-link")=='true'){
+      if($(this).attr("data-is-active-link") === 'false'){
 
         /* select the hrefs to get the page name */
         var pageContent = $(this).attr("href");
